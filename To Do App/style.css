@@ -8,14 +8,14 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: rgb(31, 31, 31);
+    background: #1E2122;
     padding: 10px;
 }
 
 .todo-app{
     width: 100%;
     max-width: 540px;
-    background: rgb(85, 85, 85);
+    background: #292C2D;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -32,39 +32,54 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(187, 80, 80);
-    border-radius: 30px;
-    padding-left: 20px;
+    background: #333738;
+    border-radius: 5px;
+    padding-left: 10px;
     margin-bottom: 25px;
+    border: 1px solid rgb(67, 118, 220);
 }
 
 input{
     flex: 1;
     border: none;
     outline: none;
-    background: blue;
+    background: #333738;
     padding: 10px;
     font-weight: 14px;
+    color: white;
 }
 
 button{
     border: none;
     outline: none;
-    padding: 16px 50px;
-    background: rgb(27, 55, 215);
+    padding: 12px 30px;
+    background: rgb(67, 118, 220);
     color: white;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 5px;
+    transition: .3s;
+}
+button:hover{
+    background: rgb(93, 136, 220);
+
+}
+button:active{
+    background: rgb(39, 78, 156);
+
 }
 
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 12px 8px 15px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    background: #343738;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
 }
 
 ul li::before{
@@ -78,11 +93,12 @@ ul li::before{
     background-position: center;
     top: 12px;
     left: 8px;
+    
 }
 
 
 ul li.checked{
-    color: red;
+    color: #7a7e7f;
     text-decoration: line-through;
 }
 
@@ -99,13 +115,16 @@ ul li span{
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: red;
+    color: rgb(220, 67, 67);
     line-height: 40px;
     text-align: center;
-    border-radius: 50%;
+    margin-right: 5px;
+    border-radius: 5px;
+
 }
 
 ul li span:hover{
-    background: green;
+    background: rgb(220, 67, 67);
+    color: white;
 }
 
